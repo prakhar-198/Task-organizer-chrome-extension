@@ -1,0 +1,110 @@
+.taskbuttons{
+    display: flex;
+}
+.checklist{
+display: flex;
+width:250px;
+}
+button{
+    color: whitesmoke;
+    padding:7px;
+    margin:2px;
+    border:2px solid black;
+    border-radius: 12%;
+    background-color: #1884ff;
+    opacity: 0.7;
+    transition: background-color 0.5s;
+    
+}button:hover{
+    opacity: 1;
+    box-shadow: whitesmoke 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transition: opacity 0.5s;
+    
+}
+
+
+#myinput{
+    margin: 5px;
+}
+.tick:checked{
+   transform: rotate(30deg);
+    transition:top transform 1s  ;
+}
+.tick{
+    transform: rotate(0deg);
+     transition:transform 1s  ;
+     
+ }
+ .header{
+    font-family: 'Lobster', cursive;
+    font-family: 'Questrial', sans-serif;
+    font-size:20px;
+
+ }body{
+     background-image: url("images/backg2.png");
+     background-size:cover;
+ }
+ .container{
+    color:aliceblue;
+     background-color:#1884ff;
+     
+ }
+
+ .header{
+     display: flex;
+     align-items: flex-end;
+ }
+ .cool{
+     display: flex;
+     height: 10px;
+     align-items: center;
+     animation-name: dart;
+     animation-duration: 0.7s;
+     animation-timing-function: ease-in;
+     animation-fill-mode: forwards;
+     background-color: aliceblue;
+ }
+ @keyframes dart{
+     from{
+         width: 50%;
+         height: 2px;
+         opacity: 1;
+     }to{
+         width:100%;
+         height: 2px;
+         opacity: 0.2;
+         
+     }
+    }
+ .icon{
+     display: flex;
+     align-items: flex-end;
+     height: 40px;
+     margin-bottom: 2px;
+ }
+ .dart{
+     display: flex;
+     align-items: center;
+ }
+ .board{
+     height: 50px;
+     transform: rotateY(-30deg);
+     
+ }
+ .taskbar{
+     display: flex;
+     
+ }
+ .prac{
+     display: flex;
+     align-items: center;
+     padding-left: 5px;
+     color: white;
+     font-family: 'Lobster', cursive;
+     font-family: 'Questrial', sans-serif;
+     font-size:20px;
+
+ }
+.taskcontainer{
+    margin-top: 5px;
+}
